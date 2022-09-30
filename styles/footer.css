@@ -1,0 +1,31 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --blue-color: #00aaff;
+}
+.footer__row {
+  height: 100px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.copyright::before {
+  content: "\00a9";
+}
+.footer__copyright,
+.colorlib {
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.colorlib a {
+  color: var(--blue-color);
+}
+@media (min-width: 800px) {
+  .footer__row {
+    flex-direction: row;
+  }
+}

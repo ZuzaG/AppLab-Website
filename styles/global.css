@@ -1,0 +1,39 @@
+:root {
+  --white-color: #ffffff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.cointainer {
+  width: 100%;
+}
+.row {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+a {
+  text-decoration: none;
+}
+.heading {
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.button {
+  margin-bottom: 40px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: var(--white-color);
+}
+@media (min-width: 1200px) {
+  .row {
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: none;
+  }
+}

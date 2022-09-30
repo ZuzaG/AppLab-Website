@@ -1,0 +1,204 @@
+:root {
+  --white-color: #ffffff;
+  --gray-color: #404040;
+  --light-blue-color: #66ccff;
+  --dark-blue-color: #0080ff;
+}
+
+.header__row {
+  background-color: var(--gray-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav {
+  position: relative;
+}
+.header__burger {
+  border: none;
+  width: 35px;
+  height: 30px;
+  display: block;
+  background: linear-gradient(
+    to bottom,
+    var(--white-color),
+    var(--white-color) 20%,
+    var(--gray-color) 20%,
+    var(--gray-color) 40%,
+    var(--white-color) 40%,
+    var(--white-color) 60%,
+    var(--gray-color) 60%,
+    var(--gray-color) 80%,
+    var(--white-color) 80%,
+    var(--white-color) 100%
+  );
+}
+.menu__list--first {
+  position: absolute;
+  right: -10px;
+  width: 200px;
+}
+.menu__list-item {
+  width: 100%;
+  background-color: var(--gray-color);
+}
+.menu__list-item,
+.menu__item .blog {
+  padding: 10px 5pc 10px 20px;
+}
+.menu__list-item a {
+  color: var(--white-color);
+  font-weight: bold;
+}
+.blog__list,
+.pages__list {
+  margin-left: 10px;
+}
+.menu__list--first {
+  display: none;
+}
+.header__burger:focus ~ .menu__list--first {
+  display: block;
+}
+.arrow {
+  font-size: 14px;
+  margin-left: 5px;
+}
+.blog__list,
+.pages__list {
+  display: none;
+  line-height: 35px;
+}
+.list-item-blog:hover .blog__list,
+.list-item-pages:hover .pages__list {
+  display: block;
+}
+.nav__download {
+  display: none;
+  background-color: var(--light-blue-color-color);
+  padding: 5px 10px 5px 10px;
+  border-radius: 2px;
+  color: var(--white-color);
+  border: none;
+}
+.nav__download:hover {
+  background-color: var(--white-color);
+  color: var(--light-blue-color-color);
+}
+
+/* SECTION 1 */
+.promote__row {
+  background-color: var(--white-color);
+  background-image: url("./../images/banner/banner.png");
+  background-position: right;
+}
+.promote__heading,
+.promote__p {
+  font-weight: bold;
+  color: var(--white-color);
+}
+.promote__heading {
+  font-size: 20px;
+  padding: 20px 0px 20px 0px;
+}
+.promote__p {
+  font-size: 12px;
+  padding-bottom: 40px;
+}
+.promote__button {
+  background-color: var(--dark-blue-color);
+  transition: font-size 1s;
+}
+.promote__button:hover {
+  font-size: 16px;
+}
+.promote__img {
+  display: grid;
+  place-items: center;
+  margin-bottom: 30px;
+}
+.promote__img {
+  max-width: 80%;
+  height: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.promote__img:hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+@media (min-width: 800px) {
+  .promote__row {
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 80px;
+    margin-bottom: 40px;
+  }
+  .promote__box {
+    max-width: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .header__box {
+    padding: 0px;
+    background-image: url("./../images/banner/banner.png");
+    background-size: cover;
+    margin: 0 auto;
+  }
+  .header__row {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .header__row,
+  .promote__row,
+  .menu__list-item {
+    background: none;
+  }
+  .menu__list--first,
+  .nav__download {
+    display: block;
+  }
+  .menu__list--first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    margin-top: 5px;
+  }
+  .menu__list-item {
+    width: auto;
+    padding: 0px;
+    font-size: 12px;
+  }
+  .header__burger {
+    display: none;
+  }
+  .promote__row {
+    justify-content: space-around;
+  }
+  .list-item-blog,
+  .list-item-pages {
+    position: relative;
+  }
+  .blog__list,
+  .pages__list {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+  }
+}
