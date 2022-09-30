@@ -2,7 +2,7 @@
 
 It is a static website, created in accordance with the latest trends. Functionality and modern design are its foundations. The website allows convenient use on a desktop, tablet and phone.
 
-See the live version of [AppLab Website](...).
+See the live version of [AppLab Website](https://zuzag.github.io/AppLab-Website/)
 
 ### Main features of the project
 
